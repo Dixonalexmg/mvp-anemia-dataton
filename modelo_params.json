@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "algoritmo": "Regresi\u00f3n Log\u00edstica Optimizada",
+  "auc_score": 0.8,
+  "fecha_entrenamiento": "Septiembre 2025",
+  "threshold_optimizado": 0.45,
+  "coeficientes": {
+    "intercept": -0.2,
+    "quintil": -0.35,
+    "area_rural": 0.28,
+    "grupo_edad": -0.22,
+    "quintil_x_rural": 0.41,
+    "primera_infancia_vulnerable": 0.38,
+    "edad_x_vulnerabilidad": 0.31,
+    "departamento_riesgo": 0.25,
+    "cobertura_programas": -0.15
+  },
+  "mapeos": {
+    "quintil_labels": {
+      "1": "Q1 (M\u00e1s pobre)",
+      "2": "Q2",
+      "3": "Q3 (Medio)",
+      "4": "Q4",
+      "5": "Q5 (M\u00e1s rico)"
+    },
+    "departamentos_alto_riesgo": [
+      16,
+      21,
+      8,
+      9,
+      5,
+      25
+    ],
+    "departamentos_bajo_riesgo": [
+      15,
+      11,
+      4,
+      7
+    ]
+  },
+  "metricas": {
+    "precision": 0.8,
+    "recall": 0.7,
+    "f1_score": 0.747,
+    "especificidad": 0.85
+  },
+  "variables_requeridas": [
+    "quintil",
+    "area_rural",
+    "grupo_edad",
+    "departamento",
+    "electricidad",
+    "agua_potable",
+    "programa_juntos",
+    "programa_qaliwarma"
+  ]
+}
